@@ -8,6 +8,10 @@ class DecomposedUrl:
 # Function Purpose: input url and split it by it's parts (protocol, domain, and path)
 # Function Inputs: 
 #                 url: String
+# Assumptions: the only type being entered into decomposeURL is a string
+#              if there is a protocol section in the url, it must have : at the end of it
+#              if there is a domain section it must have // in the front of it
+#              if there is a path section it must have / in the front of it
 def decomposeURL(url):
     decompObj = DecomposedUrl("","","")
     if ':' in url:
