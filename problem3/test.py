@@ -19,7 +19,7 @@ class TestProduct(unittest.TestCase):
 		self.assertEqual(prod.processNums('1', 1), 'Error', "should return 'Error' if either num1 or num2 is not a string")
 		self.assertEqual(prod.processNums(1, '1'), 'Error', "should return 'Error' if either num1 or num2 is not a string")
 		
-
+		''' normal functionality '''
 		self.assertEqual(prod.processNums("1","1"), 1, "should return 1 if given num1 = '1' and num2 = '1'")
 		self.assertEqual(prod.processNums("10", "2"), 20, "should return 10 if given num1 = '10' and  num2 = '2'")
 		self.assertEqual(prod.processNums("100", "15"), 1500, "should return 1500 if given num1 = '100' and num2 = '15'")
